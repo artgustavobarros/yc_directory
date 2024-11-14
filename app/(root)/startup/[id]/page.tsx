@@ -30,12 +30,10 @@ export default async function Page({params}: {params: Promise<{id: string}>}){
                 <p className="sub-heading !max-w-5xl">{post.description}</p>
             </section>
             <section className="section_container">
-                <Image
+                <img
                     src={post.image}
-                    alt='thumbnail'
+                    alt="thumbnail"
                     className="w-full h-auto rounded-xl"
-                    width={1024}
-                    height={1048}
                 />
                 <div className="space-y-5 mt-10 max-w-4xl mx-auto">
                     <div className="flex-between gap-5">
