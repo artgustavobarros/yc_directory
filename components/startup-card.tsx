@@ -35,7 +35,7 @@ export function StartupCard({post}: {post: StartupCardType}) {
                 </div>
                 <Link href={`/user/${author?._id}`}>
                     <Image
-                        src='https://placeholder.com/48x48'
+                        src={author?.image as string}
                         alt='placeholder'
                         width={48}
                         height={48}
