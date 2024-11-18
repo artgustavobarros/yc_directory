@@ -76,9 +76,9 @@ export default async function Page({params}: {params: Promise<{id: string}>}){
                             <p className="text-30-semibold">Editor Picks</p>
                             <ul className="mt-7 card_grid-sm">
                                 {
-                                    editorPosts.map((post: StartupCardType) => {
-                                        <StartupCard key={post._id} post={post}/>
-                                    })
+                                    editorPosts.map((post: StartupCardType, index: number) => (
+                                        <StartupCard key={index} post={post}/>
+                                    ))
                                 }
                             </ul>
                         </div>
